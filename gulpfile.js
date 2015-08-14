@@ -1,4 +1,4 @@
-// Generated on 2015-08-06 using generator-jhipster 2.19.0
+// Generated on 2015-08-14 using generator-jhipster 2.19.0
 /* jshint camelcase: false */
 'use strict';
 
@@ -96,11 +96,10 @@ gulp.task('serve', function() {
             '/health',
             '/configprops',
             '/v2/api-docs',
-            '/swagger-ui.html',
+            '/swagger-ui',
             '/configuration/security',
             '/configuration/ui',
             '/swagger-resources',
-            '/webjars',
             '/metrics',
             '/websocket/tracker',
             '/dump',
