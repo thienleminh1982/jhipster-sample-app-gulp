@@ -1,4 +1,4 @@
-// Generated on 2015-08-25 using generator-jhipster 2.19.0
+// Generated on 2015-08-28 using generator-jhipster 2.20.0
 /* jshint camelcase: false */
 'use strict';
 
@@ -260,5 +260,5 @@ gulp.task('server', ['serve'], function () {
 });
 
 gulp.task('default', function() {
-    runSequence('test', 'build');
+    runSequence('serve');
 });
