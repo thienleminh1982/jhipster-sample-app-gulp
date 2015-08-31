@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jhipsterApp')
+angular.module('samplegulpApp')
     .controller('BankAccountController', function ($scope, BankAccount) {
         $scope.bankAccounts = [];
         $scope.loadAll = function() {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jhipsterApp')
+angular.module('samplegulpApp')
     .controller('SettingsController', function ($scope, Principal, Auth, Language, $translate) {
         $scope.success = null;
         $scope.error = null;

@@ -1,5 +1,5 @@
 {
-    "jhipsterApp": {
+    "samplegulpApp": {
         "operation" : {
             "home": {
                 "title": "Operations",
