@@ -7,7 +7,7 @@ angular.module('samplegulpApp')
                 parent: 'admin',
                 url: '/audits',
                 data: {
-                    roles: ['ROLE_ADMIN'],
+                    authorities: ['ROLE_ADMIN'],
                     pageTitle: 'audits.title'
                 },
                 views: {

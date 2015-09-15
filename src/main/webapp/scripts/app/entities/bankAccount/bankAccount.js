@@ -7,7 +7,7 @@ angular.module('samplegulpApp')
                 parent: 'entity',
                 url: '/bankAccounts',
                 data: {
-                    roles: ['ROLE_USER'],
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'samplegulpApp.bankAccount.home.title'
                 },
                 views: {
@@ -28,7 +28,7 @@ angular.module('samplegulpApp')
                 parent: 'entity',
                 url: '/bankAccount/{id}',
                 data: {
-                    roles: ['ROLE_USER'],
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'samplegulpApp.bankAccount.detail.title'
                 },
                 views: {
@@ -51,7 +51,7 @@ angular.module('samplegulpApp')
                 parent: 'bankAccount',
                 url: '/new',
                 data: {
-                    roles: ['ROLE_USER'],
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$modal', function($stateParams, $state, $modal) {
                     $modal.open({
@@ -74,7 +74,7 @@ angular.module('samplegulpApp')
                 parent: 'bankAccount',
                 url: '/{id}/edit',
                 data: {
-                    roles: ['ROLE_USER'],
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$modal', function($stateParams, $state, $modal) {
                     $modal.open({

@@ -7,7 +7,7 @@ angular.module('samplegulpApp')
                 parent: 'site',
                 url: '/',
                 data: {
-                    roles: []
+                    authorities: []
                 },
                 views: {
                     'content@': {

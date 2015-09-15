@@ -24,6 +24,11 @@ mail:
     from: sampleGulp@localhost
 
 
+spring:
+    mvc:
+        favicon:
+            enabled: false
+
 swagger:
     title: sampleGulp API
     description: sampleGulp applications and beyond!
