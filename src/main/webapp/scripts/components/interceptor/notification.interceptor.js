@@ -9,6 +9,6 @@ angular.module('samplegulpApp')
                     AlertService.success(alertKey, { param : response.headers('X-samplegulpApp-params')});
                 }
                 return response;
-            },
+            }
         };
     });
