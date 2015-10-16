@@ -8,7 +8,9 @@ angular.module('samplegulpApp')
                 $scope.bankAccount = result;
             });
         };
-        $rootScope.$on('samplegulpApp:bankAccountUpdate', function(event, result) {
+        var unsubscribe = $rootScope.$on('samplegulpApp:bankAccountUpdate', function(event, result) {
             $scope.bankAccount = result;
         });
+        $scope.$on('$destroy', unsubscribe);
+
     });

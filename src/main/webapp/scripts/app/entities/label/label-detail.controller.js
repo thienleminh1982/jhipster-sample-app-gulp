@@ -8,7 +8,9 @@ angular.module('samplegulpApp')
                 $scope.label = result;
             });
         };
-        $rootScope.$on('samplegulpApp:labelUpdate', function(event, result) {
+        var unsubscribe = $rootScope.$on('samplegulpApp:labelUpdate', function(event, result) {
             $scope.label = result;
         });
+        $scope.$on('$destroy', unsubscribe);
+
     });
