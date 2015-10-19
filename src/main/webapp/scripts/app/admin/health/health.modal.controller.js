@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .controller('HealthModalController', function($scope, $modalInstance, currentHealth, baseName, subSystemName) {
 
         $scope.currentHealth = currentHealth;

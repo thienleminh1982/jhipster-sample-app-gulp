@@ -1,7 +1,7 @@
 /* globals $ */
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .directive('showValidation', function() {
         return {
             restrict: 'A',

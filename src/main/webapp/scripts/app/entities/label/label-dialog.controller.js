@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp').controller('LabelDialogController',
+angular.module('sampleGulpApp').controller('LabelDialogController',
     ['$scope', '$stateParams', '$modalInstance', 'entity', 'Label', 'Operation',
         function($scope, $stateParams, $modalInstance, entity, Label, Operation) {
 
@@ -13,7 +13,7 @@ angular.module('samplegulpApp').controller('LabelDialogController',
         };
 
         var onSaveFinished = function (result) {
-            $scope.$emit('samplegulpApp:labelUpdate', result);
+            $scope.$emit('sampleGulpApp:labelUpdate', result);
             $modalInstance.close(result);
         };
 

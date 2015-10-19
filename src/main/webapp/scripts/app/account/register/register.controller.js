@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .controller('RegisterController', function ($scope, $translate, $timeout, Auth) {
         $scope.success = null;
         $scope.error = null;

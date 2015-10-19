@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('configuration', {

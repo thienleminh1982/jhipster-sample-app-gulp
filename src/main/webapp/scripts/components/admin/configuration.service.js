@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .factory('ConfigurationService', function ($rootScope, $filter, $http) {
         return {
             get: function() {

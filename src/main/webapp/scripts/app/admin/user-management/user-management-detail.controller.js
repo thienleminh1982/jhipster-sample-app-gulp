@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .controller('UserManagementDetailController', function ($scope, $stateParams, User) {
         $scope.user = {};
         $scope.load = function (login) {

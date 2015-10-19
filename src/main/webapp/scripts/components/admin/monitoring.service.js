@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .factory('MonitoringService', function ($rootScope, $http) {
         return {
             getMetrics: function () {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .factory('AuditsService', function ($http) {
         return {
             findAll: function () {

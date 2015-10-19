@@ -1,4 +1,4 @@
-// Generated on 2015-10-16 using generator-jhipster 2.22.0
+// Generated on 2015-10-19 using generator-jhipster 2.22.0
 /* jshint camelcase: false */
 'use strict';
 
@@ -220,7 +220,7 @@ gulp.task('usemin', function() {
 gulp.task('ngconstant:dev', function() {
     return ngConstant({
         dest: 'app.constants.js',
-        name: 'samplegulpApp',
+        name: 'sampleGulpApp',
         deps:   false,
         noFile: true,
         interpolate: /\{%=(.+?)%\}/g,
@@ -236,7 +236,7 @@ gulp.task('ngconstant:dev', function() {
 gulp.task('ngconstant:prod', function() {
     return ngConstant({
         dest: 'app.constants.js',
-        name: 'samplegulpApp',
+        name: 'sampleGulpApp',
         deps:   false,
         noFile: true,
         interpolate: /\{%=(.+?)%\}/g,

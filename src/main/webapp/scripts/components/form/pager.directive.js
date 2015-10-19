@@ -1,8 +1,8 @@
 /* globals $ */
 'use strict';
 
-angular.module('samplegulpApp')
-    .directive('samplegulpAppPager', function() {
+angular.module('sampleGulpApp')
+    .directive('sampleGulpAppPager', function() {
         return {
             templateUrl: 'scripts/components/form/pager.html'
         };

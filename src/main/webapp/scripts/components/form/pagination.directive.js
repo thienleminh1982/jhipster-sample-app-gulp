@@ -1,8 +1,8 @@
 /* globals $ */
 'use strict';
 
-angular.module('samplegulpApp')
-    .directive('samplegulpAppPagination', function() {
+angular.module('sampleGulpApp')
+    .directive('sampleGulpAppPagination', function() {
         return {
             templateUrl: 'scripts/components/form/pagination.html'
         };

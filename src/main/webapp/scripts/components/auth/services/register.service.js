@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp')
+angular.module('sampleGulpApp')
     .factory('Register', function ($resource) {
         return $resource('api/register', {}, {
         });

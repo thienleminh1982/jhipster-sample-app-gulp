@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('samplegulpApp').controller('BankAccountDialogController',
+angular.module('sampleGulpApp').controller('BankAccountDialogController',
     ['$scope', '$stateParams', '$modalInstance', 'entity', 'BankAccount', 'User', 'Operation',
         function($scope, $stateParams, $modalInstance, entity, BankAccount, User, Operation) {
 
@@ -14,7 +14,7 @@ angular.module('samplegulpApp').controller('BankAccountDialogController',
         };
 
         var onSaveFinished = function (result) {
-            $scope.$emit('samplegulpApp:bankAccountUpdate', result);
+            $scope.$emit('sampleGulpApp:bankAccountUpdate', result);
             $modalInstance.close(result);
         };
 
