@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('sampleGulpApp').controller('BankAccountDialogController',
-    ['$scope', '$stateParams', '$modalInstance', 'entity', 'BankAccount', 'User', 'Operation',
-        function($scope, $stateParams, $modalInstance, entity, BankAccount, User, Operation) {
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'BankAccount', 'User', 'Operation',
+        function($scope, $stateParams, $uibModalInstance, entity, BankAccount, User, Operation) {
 
         $scope.bankAccount = entity;
         $scope.users = User.query();
@@ -15,7 +15,7 @@ angular.module('sampleGulpApp').controller('BankAccountDialogController',
 
         var onSaveSuccess = function (result) {
             $scope.$emit('sampleGulpApp:bankAccountUpdate', result);
-            $modalInstance.close(result);
+            $uibModalInstance.close(result);
             $scope.isSaving = false;
         };
 
@@ -33,6 +33,6 @@ angular.module('sampleGulpApp').controller('BankAccountDialogController',
         };
 
         $scope.clear = function() {
-            $modalInstance.dismiss('cancel');
+            $uibModalInstance.dismiss('cancel');
         };
 }]);

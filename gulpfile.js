@@ -1,4 +1,4 @@
-// Generated on 2015-11-20 using generator-jhipster 2.24.0
+// Generated on 2015-12-01 using generator-jhipster 2.24.0
 /* jshint camelcase: false */
 'use strict';
 
@@ -14,7 +14,6 @@ var gulp = require('gulp'),
     ngConstant = require('gulp-ng-constant-fork'),
     jshint = require('gulp-jshint'),
     rev = require('gulp-rev'),
-    protractor = require("gulp-protractor").protractor,
     proxy = require('proxy-middleware'),
     es = require('event-stream'),
     flatten = require('gulp-flatten'),
@@ -66,12 +65,6 @@ gulp.task('test', ['wiredep:test', 'ngconstant:dev'], function(done) {
     }, done).start();
 });
 
-gulp.task('protractor', function() {
-    return gulp.src(["./src/main/test/javascript/e2e/*.js"])
-        .pipe(protractor({
-            configFile: "src/test/javascript/protractor.conf.js"
-        }));
-});
 
 gulp.task('copy', function() {
     return es.merge(  // copy i18n folders only if translation is enabled
@@ -269,8 +262,6 @@ gulp.task('jshint', function() {
 gulp.task('server', ['serve'], function () {
     gutil.log('The `server` task has been deprecated. Use `gulp serve` to start a server');
 });
-
-gulp.task('itest', ['protractor']);
 
 gulp.task('default', function() {
     runSequence('serve');
