@@ -1,13 +1,12 @@
-jhipster-prod-mysql:
-  container_name: sampleGulp-prod-mysql
+samplegulp-mysql:
+  container_name: samplegulp-mysql
   image: mysql:5.7.9
   # volumes:
-  # - ~/volumes/jhipster/sampleGulp/prod-mysql/:/var/lib/mysql/
+  #   - ~/volumes/jhipster/sampleGulp/mysql/:/var/lib/mysql/
   environment:
-  - MYSQL_USER=root
-  - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-  - MYSQL_DATABASE=samplegulp
+    - MYSQL_USER=root
+    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    - MYSQL_DATABASE=samplegulp
   ports:
-  - "3306:3306"
+    - "3306:3306"
   command: mysqld --lower_case_table_names=1
-
