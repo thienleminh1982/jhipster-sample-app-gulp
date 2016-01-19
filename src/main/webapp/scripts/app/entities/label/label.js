@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('label', {
@@ -8,7 +8,7 @@ angular.module('sampleGulpApp')
                 url: '/labels',
                 data: {
                     authorities: ['ROLE_USER'],
-                    pageTitle: 'sampleGulpApp.label.home.title'
+                    pageTitle: 'samplegulpApp.label.home.title'
                 },
                 views: {
                     'content@': {
@@ -29,7 +29,7 @@ angular.module('sampleGulpApp')
                 url: '/label/{id}',
                 data: {
                     authorities: ['ROLE_USER'],
-                    pageTitle: 'sampleGulpApp.label.detail.title'
+                    pageTitle: 'samplegulpApp.label.detail.title'
                 },
                 views: {
                     'content@': {

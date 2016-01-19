@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
 	.controller('OperationDeleteController', function($scope, $uibModalInstance, entity, Operation) {
 
         $scope.operation = entity;

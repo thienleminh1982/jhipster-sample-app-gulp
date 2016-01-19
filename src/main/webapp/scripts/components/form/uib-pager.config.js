@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .config(function (uibPagerConfig) {
         uibPagerConfig.itemsPerPage = 20;
         uibPagerConfig.previousText = '«';

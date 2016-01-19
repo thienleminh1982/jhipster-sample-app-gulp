@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .controller('LabelController', function ($scope, $state, Label) {
 
         $scope.labels = [];

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .factory('Language', function ($q, $http, $translate, LANGUAGES) {
         return {
             getCurrent: function () {

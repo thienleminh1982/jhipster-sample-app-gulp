@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .directive('jhSort', function () {
         return {
             restrict: 'A',

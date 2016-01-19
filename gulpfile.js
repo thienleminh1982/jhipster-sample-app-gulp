@@ -1,4 +1,4 @@
-// Generated on 2015-12-30 using generator-jhipster 2.26.2
+// Generated on 2016-01-19 using generator-jhipster 2.27.0
 /* jshint camelcase: false */
 'use strict';
 
@@ -142,6 +142,7 @@ gulp.task('serve', function() {
             proxyRoutes.map(function (r) {
                 var options = url.parse(baseUri + r);
                 options.route = r;
+                options.preserveHost = true;
                 return proxy(options);
             }));
 
@@ -230,7 +231,7 @@ gulp.task('usemin', function() {
 gulp.task('ngconstant:dev', function() {
     return ngConstant({
         dest: 'app.constants.js',
-        name: 'sampleGulpApp',
+        name: 'samplegulpApp',
         deps:   false,
         noFile: true,
         interpolate: /\{%=(.+?)%\}/g,
@@ -246,7 +247,7 @@ gulp.task('ngconstant:dev', function() {
 gulp.task('ngconstant:prod', function() {
     return ngConstant({
         dest: 'app.constants.js',
-        name: 'sampleGulpApp',
+        name: 'samplegulpApp',
         deps:   false,
         noFile: true,
         interpolate: /\{%=(.+?)%\}/g,

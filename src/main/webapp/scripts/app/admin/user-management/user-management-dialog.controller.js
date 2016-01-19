@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp').controller('UserManagementDialogController',
+angular.module('samplegulpApp').controller('UserManagementDialogController',
     ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'User', 'Language',
         function($scope, $stateParams, $uibModalInstance, entity, User, Language) {
 

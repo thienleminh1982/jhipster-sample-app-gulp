@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .controller('BankAccountController', function ($scope, $state, BankAccount) {
 
         $scope.bankAccounts = [];

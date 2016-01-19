@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
 	.controller('LabelDeleteController', function($scope, $uibModalInstance, entity, Label) {
 
         $scope.label = entity;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .factory('BankAccount', function ($resource, DateUtils) {
         return $resource('api/bankAccounts/:id', {}, {
             'query': { method: 'GET', isArray: true},

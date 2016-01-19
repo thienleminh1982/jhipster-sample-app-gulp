@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleGulpApp')
+angular.module('samplegulpApp')
     .controller('OperationController', function ($scope, $state, Operation, ParseLinks) {
 
         $scope.operations = [];

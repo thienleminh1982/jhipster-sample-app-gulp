@@ -10,27 +10,27 @@ public class HeaderUtil {
 
     public static HttpHeaders createAlert(String message, String param) {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-sampleGulpApp-alert", message);
-        headers.add("X-sampleGulpApp-params", param);
+        headers.add("X-samplegulpApp-alert", message);
+        headers.add("X-samplegulpApp-params", param);
         return headers;
     }
 
     public static HttpHeaders createEntityCreationAlert(String entityName, String param) {
-        return createAlert("sampleGulpApp." + entityName + ".created", param);
+        return createAlert("samplegulpApp." + entityName + ".created", param);
     }
 
     public static HttpHeaders createEntityUpdateAlert(String entityName, String param) {
-        return createAlert("sampleGulpApp." + entityName + ".updated", param);
+        return createAlert("samplegulpApp." + entityName + ".updated", param);
     }
 
     public static HttpHeaders createEntityDeletionAlert(String entityName, String param) {
-        return createAlert("sampleGulpApp." + entityName + ".deleted", param);
+        return createAlert("samplegulpApp." + entityName + ".deleted", param);
     }
 
     public static HttpHeaders createFailureAlert(String entityName, String errorKey, String defaultMessage) {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-sampleGulpApp-error", "error." + errorKey);
-        headers.add("X-sampleGulpApp-params", entityName);
+        headers.add("X-samplegulpApp-error", "error." + errorKey);
+        headers.add("X-samplegulpApp-params", entityName);
         return headers;
     }
 }
