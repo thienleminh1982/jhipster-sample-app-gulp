@@ -1,0 +1,1 @@
+java -jar target/samplegulp-0.0.1-SNAPSHOT.war --spring.profiles.active=prod

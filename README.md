@@ -73,3 +73,15 @@ To setup this project in Jenkins, use the following configuration:
 [Karma]: http://karma-runner.github.io/
 [Jasmine]: http://jasmine.github.io/2.0/introduction.html
 [Protractor]: https://angular.github.io/protractor/
+
+## Customization
+Install locally an installce of MySQL to check running of profile "prod"
+Create a database user and table in the MySQL you just opened:
+
+```sql
+CREATE USER 'lmthien'@'localhost' IDENTIFIED BY 'pass';
+CREATE DATABASE samplegulp;
+GRANT ALL ON samplegulp.* TO 'lmthien'@'localhost';
+exit
+```
+
